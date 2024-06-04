@@ -1,0 +1,41 @@
+.btn-light {
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.8) !important;
+}
+
+.btn-light:hover {
+  background-color: #ff8c00 !important;
+  border-color: #ff8c00 !important;
+  color: #ffffff !important;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; 
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 1.5vw;
+}
+
+.input-container input[type="number"] {
+  width: 60px;
+  margin-left: 10px;
+  color: #000000; 
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.input-container input[type="number"]::-webkit-inner-spin-button,
+.input-container input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.card {
+  border: 1px solid #000000 !important; 
+  transition: box-shadow 0.3s !important;
+}
+
+.card:hover {
+  box-shadow: 0 0 30px rgba(255, 140, 0, 1) !important;  
+}
