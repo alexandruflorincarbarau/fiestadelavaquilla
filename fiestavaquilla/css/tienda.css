@@ -1,0 +1,19 @@
+.card {
+    border: 1px solid #000000 !important; 
+    transition: box-shadow 0.3s !important;
+  }
+
+  .card:hover {
+    box-shadow: 0 0 30px rgba(255, 140, 0, 1) !important;  
+  }
+
+  .btn-light {
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.8) !important; 
+  }
+
+  .btn-light:hover {
+    background-color: #ff8c00 !important;  
+    border-color: #ff8c00 !important;  
+    color: #ffffff !important; 
+  }
+  

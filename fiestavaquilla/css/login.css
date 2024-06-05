@@ -1,0 +1,195 @@
+body {
+    background-color: #000000 !important;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+.ring {
+    position: relative;
+    width: 90vw;
+    height: 90vw;
+    max-width: 500px;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+
+.ring i {
+    position: absolute;
+    inset: 0;
+    border: 2px solid #fff;
+    transition: 0.5s;
+}
+
+.ring i:nth-child(1) {
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate 6s linear infinite;
+}
+
+.ring i:nth-child(2) {
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+    animation: animate 4s linear infinite;
+}
+
+.ring i:nth-child(3) {
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+    animation: animate2 10s linear infinite;
+}
+
+.ring:hover i {
+    border: 6px solid #000000;
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.login {
+    position: absolute;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.login .inputBx {
+    position: relative;
+    width: 100%;
+}
+
+.login .inputBx input {
+    width: 100%;
+    padding: 12px 20px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    font-size: 1.2em;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+}
+
+.login .inputBx input[type="submit"] {
+    background: #000000;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 11px rgba(255, 255, 255, 0.8) !important; 
+}
+
+.login .inputBx input[type="submit"]:hover {
+    background: #ff8c00;
+    border-color: #ff8c00 !important;
+    cursor: pointer;
+}
+
+.login .inputBx input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.login .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.login .links a {
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .ring {
+        width: 80vw;
+        height: 80vw;
+        margin-top: 30vh;
+    }
+
+    .login {
+        width: 90%;
+    }
+
+    .login h2 {
+        font-size: 1.8em;
+    }
+
+    .login .inputBx input {
+        font-size: 1.1em;
+    }
+
+    .login .links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ring {
+        width: 70vw;
+        height: 70vw;
+        margin-top: 30vh;
+    }
+
+    .login {
+        width: 95%;
+    }
+
+    .login h2 {
+        font-size: 1.5em;
+    }
+
+    .login .inputBx input {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .ring {
+        width: 60vw;
+        height: 60vw;
+        margin-top: 30vh;
+    }
+
+    .login h2 {
+        font-size: 1.2em;
+    }
+
+    .login .inputBx input {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+}

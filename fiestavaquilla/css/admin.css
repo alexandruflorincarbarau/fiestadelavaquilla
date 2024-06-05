@@ -1,0 +1,18 @@
+.btn-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content-container {
+    margin: 20px;
+}
+.tittle{
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #ff933a;
+    -webkit-text-stroke: 1px black; 
+    color: transparent; 
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+}
